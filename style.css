@@ -1,24 +1,85 @@
-header.nav{
-    text-align:right;
+@font-face {
+    font-family: 'Varela Round';
+    src: url('fonts/VarelaRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-*{
-    font-family: Arial;
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+header.nav {
+    text-align:justify;
+    padding: 20px 10px;
+}
+
+* {
     padding: 10px 20px;
 }
-header.huuloc4399{
-    font-size: 80px;
-}
-html{
-    background: url('https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/1655346565115-IZRITMCG2WH8RF5F19V6/download+%2879%29.jpg?format=2500w');
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-div{
-    width:fit-content;
-    margin:auto;
 
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-p.vl{
-    text-wrap:pretty;
+
+header.huuloc4399 {
+    font-size: 120px;
+}
+
+html {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/1655346565115-IZRITMCG2WH8RF5F19V6/download+%2879%29.jpg?format=2500w');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+div {
+    width: fit-content;
+    margin: auto;
+}
+
+p.vl {
+    word-wrap:normal;
+}
+/* Căn chỉnh phần menu và lựa chọn */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Ẩn phần lựa chọn mặc định */
+.options {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+    z-index: 1;
+}
+a {
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+    color: #ffffff; /* Màu xanh cho liên kết */
+    font-size: 18px;
+    margin: 10px;
+}
+.nav{
+a:hover {
+    color: #FF6347; /* Đổi màu khi hover vào liên kết */
+}
+
+/* Tạo không gian cho các liên kết */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+    margin: auto;
+}
 }
