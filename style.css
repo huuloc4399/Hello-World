@@ -1,0 +1,24 @@
+header.nav{
+    text-align:right;
+}
+*{
+    font-family: Arial;
+    padding: 10px 20px;
+}
+header.huuloc4399{
+    font-size: 80px;
+}
+html{
+    background: url('https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/1655346565115-IZRITMCG2WH8RF5F19V6/download+%2879%29.jpg?format=2500w');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div{
+    width:fit-content;
+    margin:auto;
+
+}
+p.vl{
+    text-wrap:pretty;
+}
