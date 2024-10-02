@@ -46,23 +46,22 @@ h2 {
 .hidden {
     display: none;
 }
-
-a {
-    text-decoration: none; /* A distinct color for links */
-    color: whitesmoke;
-  }
-  
-  a:hover {
-    color: #FF6347; /* A different color when hovering */
-  }
-html {
+html{
     background-image: url('https://kilala.vn/data/emagazine/images/vol45/hatsune-miku/hatsune-miku-background.jpg');
     background-repeat: repeat-y;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
 }
-.back-home{
-    text-align: right;
-    color: white;
+.post-content{
+    text-indent: 2rem;
 }
+a {
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+    color: #ffffff; /* Màu xanh cho liên kết */
+    font-size: 18px;
+    margin: 10px;
+  }
+  a:hover{
+    color:#FF6347;
+  }
