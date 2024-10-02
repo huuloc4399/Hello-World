@@ -87,7 +87,7 @@ a:hover {
     cursor: pointer;
     display: none; /* Ẩn icon trên desktop */
     position:absolute;
-    top: 120px;
+    top: 30px;
     right: 20px;
 }
 nav ul {
@@ -133,6 +133,7 @@ nav ul li a {
 
     nav ul.active {
         display: flex; /* Hiển thị menu khi người dùng bấm vào icon */
+        padding-top: 50px;
     }
 }
 /*test*/
@@ -145,13 +146,14 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    position:fixed;
+    position: fixed;
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 50px;
 }
 
 .blog-post {

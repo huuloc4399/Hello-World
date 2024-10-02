@@ -3,3 +3,8 @@ function toggleMenu() {
     navbar.classList.toggle("active");
     document.body.classList.toggle("menu-open");
 }
+const hamburgerButton = document.querySelector('.menu-icon');
+        
+        hamburgerButton.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
