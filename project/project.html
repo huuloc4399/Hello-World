@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="projects-section">
+        <h2>My Projects</h2>
+        <!-- Thẻ project, khi bấm vào sẽ hiển thị danh sách -->
+        <div class="project-card" onclick="toggleProjects()">
+            <h3>Show Projects</h3>
+        </div>
+
+        <!-- Danh sách dự án, sẽ ẩn mặc định -->
+        <ul id="project-list" class="hidden">
+            <li>Project 1: </li>
+            <li>Project 2: </li>
+            <li>Project 3: </li>
+            <li>Project 4: </li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script> <!-- Liên kết đến file JavaScript -->
+</body>
+</html>

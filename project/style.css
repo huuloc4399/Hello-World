@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Varela Round';
+    src: url('fonts/VarelaRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    text-align: left;
+}
+
+.project-card {
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #0056b3;
+}
+
+#project-list {
+    list-style: none;
+    padding: 0;
+}
+
+#project-list li {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ẩn danh sách dự án mặc định */
+.hidden {
+    display: none;
+}
+html{
+    background-image: url('https://kilala.vn/data/emagazine/images/vol45/hatsune-miku/hatsune-miku-background.jpg');
+}

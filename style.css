@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Varela Round', sans-serif;
+    padding: 10px;
 }
 
 header.nav {
@@ -13,22 +14,19 @@ header.nav {
     padding: 20px 10px;
 }
 
-* {
-    padding: 10px 20px;
-}
 
 .varela-round-regular {
     font-family: "Varela Round", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
-header.huuloc4399 {
+.huuloc4399 {
     font-size: 120px;
 }
 
-html {background-image: url('https://kilala.vn/data/emagazine/images/vol45/hatsune-miku/hatsune-miku-background.jpg');
-    
+html {
+    background-image: url('https://kilala.vn/data/emagazine/images/vol45/hatsune-miku/hatsune-miku-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:right;
@@ -69,7 +67,7 @@ a {
     font-size: 18px;
     margin: 10px;
 }
-.nav{
+nav{
 a:hover {
     color: #FF6347; /* Đổi màu khi hover vào liên kết */
 }
@@ -82,4 +80,58 @@ a:hover {
     max-width: 200px;
     margin: auto;
 }
+}
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Ẩn icon trên desktop */
+    position:absolute;
+    top: 90px;
+    right: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+
+
+/* Thiết lập cho di động */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Hiện icon trên thiết bị di động */
+    }
+
+    nav ul {
+        display: none; /* Ẩn menu mặc định */
+        flex-direction: column; /* Sắp xếp các mục theo cột */
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        text-align: right;
+        padding: 15px;
+    }
+
+    nav ul.active {
+        display: flex; /* Hiển thị menu khi người dùng bấm vào icon */
+    }
 }
