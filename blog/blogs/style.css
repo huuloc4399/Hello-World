@@ -65,3 +65,9 @@ a {
   a:hover{
     color:#FF6347;
   }
+  .home{
+    position: fixed;
+  }
+  .blog-post{
+    padding-top: 3rem;
+  }

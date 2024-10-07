@@ -7,6 +7,7 @@
 body {
     font-family: 'Varela Round', sans-serif;
     padding: 10px;
+    margin: 0px;
 }
 
 header.nav {
@@ -30,6 +31,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position:right;
+    background-attachment: fixed;
 }
 
 div {
@@ -87,7 +89,7 @@ a:hover {
     cursor: pointer;
     display: none; /* Ẩn icon trên desktop */
     position:absolute;
-    top: 30px;
+    top: 20px;
     right: 20px;
 }
 nav ul {
@@ -111,7 +113,7 @@ nav ul li a {
 
 
 /* Thiết lập cho di động */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .menu-icon {
         display: block; /* Hiện icon trên thiết bị di động */
     }
@@ -147,13 +149,14 @@ body {
     font-size: 24px;
     font-weight: bold;
     position: fixed;
+    top:18px;
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .blog-post {
@@ -188,3 +191,41 @@ video {
         background-position: top;
     }
 }
+.blog-card {
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+}
+.blog-card:hover{
+    color:#FF6347;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+    background-image: none;
+
+  }
+  button{
+    background-color: transparent;
+    cursor: pointer;
+    text-align:justify;
+    font-size: x-large;
+    border-radius: 100px;
+    border-color: #f9f9f9;
+    margin-left: 60px;
+  }
+  button:hover{
+    border-color: #000000;
+    border-radius: 150px;
+  }
+  .dark-mode-button{
+    align-content: center;
+  }

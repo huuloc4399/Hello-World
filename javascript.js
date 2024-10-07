@@ -8,3 +8,8 @@ const hamburgerButton = document.querySelector('.menu-icon');
         hamburgerButton.addEventListener('click', function() {
             this.classList.toggle('active');
         });
+/*dark-mode*/
+function myFunction() {
+    var element = document.body;
+     element.classList.toggle("dark-mode");
+     }

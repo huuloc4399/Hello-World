@@ -49,3 +49,7 @@ h2 {
 html{
     background-image: url('https://kilala.vn/data/emagazine/images/vol45/hatsune-miku/hatsune-miku-background.jpg');
 }
+a{
+    text-decoration: none;
+    color: white;
+}
